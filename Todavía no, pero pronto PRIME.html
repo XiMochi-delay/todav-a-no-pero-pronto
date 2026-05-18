@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Todavía No, Pero Pronto</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    overflow-x:hidden;
+    font-family:'Quicksand', sans-serif;
+    color:#3f4161;
+
+    background-image: url("fondo.png");
+    background-size:cover;
+    background-position:top center;
+    background-repeat:no-repeat;
+    background-attachment:scroll;
+}
+   
+/* NAV */
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+
+    background:rgba(255,255,255,0.7);
+    backdrop-filter:blur(10px);
+
+    overflow-x:auto;
+    overflow-y:hidden;
+    white-space:nowrap;
+
+    padding:18px 10px;
+
+    border-bottom:3px solid rgba(255,255,255,0.8);
+
+    scrollbar-width:none;
+}
+
+/* ocultar scrollbar */
+
+nav::-webkit-scrollbar{
+    display:none;
+}
+
+nav a{
+    display:inline-block;
+
+    text-decoration:none;
+    color:#5962b3;
+
+    font-weight:700;
+
+    margin:0 10px;
+    padding:12px 22px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.55);
+
+    transition:0.3s;
+
+    font-size:1rem;
+}
+
+nav a:hover{
+    background:#ffd6e5;
+    color:#7a4f68;
+    transform:translateY(-2px);
+}
+
+
+
+
+
+
+/* MAIN CONTENT */
+
+.content{
+    position:relative;
+    z-index:10;
+    padding-top:80px;
+}
+
+/* CARDS */
+
+.card{
+    background:rgba(255,255,255,0.8);
+    backdrop-filter:blur(10px);
+    border-radius:28px;
+    border:4px solid rgba(255,255,255,0.9);
+    padding:45px;
+    width:85%;
+    max-width:900px;
+    margin:40px auto;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* TITLE CARD */
+
+.hero{
+    text-align:center;
+    padding:30px 50px;
+}
+
+.hero h1{
+    font-family:'Press Start 2P', cursive;
+    color:#6767cf;
+    line-height:1.7;
+    font-size:2.2rem;
+    margin-bottom:30px;
+}
+
+.hero p{
+    font-size:1.3rem;
+    line: height 1.3em;;
+}
+
+/* HEADINGS */
+
+h2{
+    font-family:'Press Start 2P', cursive;
+    color:#5254aa;
+    font-size:1.2rem;
+    margin-bottom:30px;
+    line-height:1.6;
+}
+
+/* TEXT */
+
+p{
+    line-height:1.3;
+    font-size:1.1rem;
+}
+
+/* QUESTIONS */
+
+.questions{
+    columns:2;
+    gap:40px;
+    padding-left:25px;
+}
+
+.questions li{
+    margin-bottom:22px;
+    line-height:1.8;
+    font-size:1.1rem;
+}
+
+/* ICONS */
+
+.icon{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+
+
+/* RESPONSIVE */
+/* PRUEBAS */
+
+.prueba-img{
+    width:60%;
+    display:block;
+    margin:20px auto;
+
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* COLLAGE */
+
+.collage-img{
+    width:60%;
+    display:block;
+    margin:20px auto;
+
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+@media(max-width:900px){
+
+    .questions{
+        columns:1;
+    }
+
+    nav{
+        width:95%;
+        text-align:center;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:8px;
+    }
+
+    .hero h1{
+        font-size:1.4rem;
+    }
+
+    .card{
+        width:92%;
+        padding:30px;
+    }
+
+    .city{
+        opacity:0.7;
+    }
+
+    .balloon{
+        right:5%;
+        transform:scale(0.8);
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#preguntas">Para explorar...</a>
+    <a href="#autoconocimiento y autoconcepto">Autoconocimiento y autoconcepto</a>
+    <a href="#orientacion">Orientación vocacional</a>
+    <a href="#pruebas">Pruebas</a>
+    <a href="#justificacion">Justificación</a>
+    <a href="#proyecto">Proyecto de vida</a>
+    <a href="#decisiones">Toma de decisiones</a>
+    <a href="#collage">Collage</a>
+    <a href="#conclusion">Conclusión</a>
+</nav>
+
+
+    <!-- CONTENT -->
+
+    <div class="content">
+
+        <!-- HERO -->
+
+        <section id="inicio">
+
+            <div class="card hero">
+
+                <h1>
+                    TODAVÍA NO,<br>
+                    PERO PRONTO
+                </h1>
+
+                <p>
+                    Un viaje sobre quién soy,
+                    quién quiero ser y el camino
+                    que estoy construyendo para mi futuro. Por: Ximena Roldán
+            
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- QUESTIONS -->
+
+        <section id="preguntas">
+
+            <div class="card">
+
+                <h2>PREGUNTAS DE EXPLORACIÓN</h2>
+
+                <ul class="questions">
+
+                    <li>¿Qué actividades disfruto hacer incluso cuando son difíciles?</li>
+
+                    <li>¿Me veoo haciendo trabajo manual?</li>
+
+                    <li>¿Qué tipo de vida me gustaría tener en el futuro?</li>
+
+                    <li>¿Prefiero trabajar sola o en equipo?</li>
+
+                    <li>¿Qué habilidades considero que tengo?</li>
+
+                    <li>¿Qué materias o temas llaman más mi atención?</li>
+
+                    <li>¿Qué carrera se relaciona con mis intereses?</li>
+
+                    <li>¿Qué tipo de trabajo me haría sentir feliz y tranquila?</li>
+
+                    <li>¿Cuánto quiero ganar?</li>
+
+                    <li>¿Cómo me gustaría contribuir a la sociedad?</li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- VOCATION -->
+
+        <section id="autoconocimiento y autoconcepto">
+
+            <div class="card">
+
+                <h2>AUTOCONOCIMIENTO Y AUTOCONCEPTO</h2>
+
+                <p>
+                    <li><strong>Cualidades:</strong> Creativa, reflexiva, buena para resolver problemas, perseverante, detallista, imaginativa, analítica, adaptable, sensible, reservada, curiosa.</li>
+                    <br>
+                    <li><strong>Áreas de mejora:</strong> Falta de confianza, aceptación de reconocimiento, organización de tiempo, seguridad, DEMASIADA atención al detalle.</li>
+                    <br>
+                    <li><strong>Intereses:</strong> Dibujar, manualidades, matemáticas, crear, construir desde 0, biofilia.</li>
+                    <br>
+                    <li><strong>Forma de relacionarme:</strong> Suelo relacionarme mejor con las personas a las que les tengo confianza, cuando hay algo que me molesta intento comunicarlo con las personas y solucionar el problema. Cuando tengo que trabajar con gente que no conozco tanto intento brindar apoyo y tomar el liderazgo o aportar ideas para la organización.</li>
+                
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- LIFE -->
+
+        <section id="orientacion">
+
+            <div class="card">
+
+                <h2>ORIENTACIÓN VOCACIONAL</h2>
+
+<p>
+
+<strong>¿Para qué sirve?</strong><br>
+La orientación vocacional sirve para ayudar a las personas a conocerse mejor y tomar decisiones sobre su futuro académico y profesional. Permite identificar intereses, habilidades, metas y áreas en las que una persona puede desarrollarse de manera satisfactoria.
+
+<br><br>
+
+<strong>Importancia personal</strong><br>
+Considero que la orientación vocacional es importante porque me ayuda a reflexionar sobre quién soy, qué me gusta y qué quiero lograr en el futuro. También me permite tomar decisiones más conscientes sobre la carrera que podría estudiar y el tipo de vida que quiero tener.
+
+<br><br>
+
+<strong>Componentes</strong><br>
+Algunos componentes de la orientación vocacional son el autoconocimiento, intereses personales, habilidades, personalidad, valores e información sobre las distintas carreras y campos laborales.
+
+<br><br>
+
+<strong>Factores internos</strong><br>
+Los factores internos son las características personales que influyen en mis decisiones, como mis gustos, habilidades, emociones, personalidad y metas. En mi caso, algunos factores internos son mi creatividad, mi interés por aprender cosas nuevas y mi gusto por las áreas donde puedo combinar matemáticas y artes.
+
+<br><br>
+
+<strong>Factores externos</strong><br>
+Los factores externos son elementos del entorno que pueden influir en mis decisiones, como la familia, escuela, economía, opiniones de otras personas oportunidades laborales. En mi vida, estos factores influyen al momento de pensar en las posibilidades de estudio, el apoyo de las personas cercanas y las oportunidades que podría tener en el futuro.
+
+</p>
+            </div>
+
+        </section>
+
+        <!-- DECISIONS -->
+
+        <section id="pruebas">
+
+            <div class="card">
+
+
+                <h2>PRUEBAS</h2>
+<img src="WhatsApp Image 2026-05-18 at 9.15.30 AM.jpeg" class="prueba-img">
+<img src="prueba 2.jpeg" class="prueba-img">
+            </div>
+
+        </section>
+
+        <section id="justificacion">
+
+            <div class="card">
+                <h2>JUSTIFICACIÓN</h2>
+
+<p>
+
+<strong>Interés</strong><br>
+La carrera de Ingeniería Civil me interesa porque combina creatividad, análisis y solución de problemas. Me llama la atención la idea de diseñar y construir espacios, estructuras y proyectos que puedan ayudar a las personas y formar parte del desarrollo de una ciudad. Además, considero interesante cómo esta carrera requiere tanto conocimientos matemáticos como trabajo práctico y planeación. Mi mayor interés es hacer arquitectura verde y fusionar la naturaleza con la modernidad, creando paisajes futuristas y ecofriendly.
+
+
+<br><br>
+
+<strong>Perfil de ingreso</strong><br>
+El perfil de ingreso de Ingeniería Civil incluye habilidades como el razonamiento lógico, interés por las matemáticas y la física, capacidad para trabajar en equipo, creatividad, responsabilidad y disposición para resolver problemas. También es importante tener interés por el diseño, la construcción y el funcionamiento de las estructuras.
+
+<br><br>
+
+<strong>Perfil de egreso</strong><br>
+Al finalizar la carrera, un ingeniero civil puede diseñar, supervisar y desarrollar proyectos de construcción e infraestructura. Además, cuenta con conocimientos técnicos, capacidad de análisis y habilidades para resolver problemas relacionados con obras y estructuras, siempre considerando la seguridad y las necesidades de la sociedad.
+
+<br><br>
+
+<strong>Campo laboral</strong><br>
+La Ingeniería Civil tiene diferentes áreas de trabajo, como la construcción, diseño de estructuras, urbanismo, carreteras, puentes, obras públicas y supervisión de proyectos. Los ingenieros civiles pueden trabajar en empresas constructoras, instituciones gubernamentales o desarrollar proyectos de manera independiente.
+
+<br><br>
+
+<strong>Relación conmigo</strong><br>
+Considero que esta carrera se relaciona conmigo porque me gustan las matemáticas y me interesa la idea de crear proyectos que tengan un impacto real en las personas. También siento que algunas de mis cualidades, como la creatividad, el análisis y la perseverancia, podrían ayudarme a desarrollarme en esta área. Además, me gustaría construir un futuro profesional donde pueda aprender constantemente y participar en proyectos importantes.
+
+</p>
+</div>
+
+        </section>
+        <section id="proyecto">
+
+            <div class="card">
+
+
+                <h2>PROYECTO DE VIDA</h2>
+
+<p>
+
+<strong>¿Qué es?</strong><br>
+Un proyecto de vida es un plan personal que ayuda a organizar metas, sueños y decisiones para el futuro. Permite reflexionar sobre quién soy, qué quiero lograr y cómo puedo construir la vida que deseo tanto en el ámbito personal como profesional.
+
+<br><br>
+
+<strong>Elementos</strong><br>
+Algunos elementos importantes de un proyecto de vida son el autoconocimiento, metas personales, valores, toma de decisiones, responsabilidad, planeación y esfuerzo constante para alcanzar objetivos.
+
+<br><br>
+
+<strong>Metas a corto plazo</strong><br>
+Entre mis metas a corto plazo se encuentran terminar mis estudios de preparatoria con buenas calificaciones, seguir aprendiendo nuevas habilidades y comenzar a hacer un proyecto social relacionado con los ODS orientados hacia mi carrera para una beca en el ITESM.
+
+<br><br>
+
+<strong>Metas a mediano plazo</strong><br>
+A mediano plazo me gustaría ingresar a la universidad en el ITESM, estudiar Ingeniería Civil y desarrollar más conocimientos y experiencia en esa área. También quiero volverme una persona más segura de mí misma y capaz de tomar decisiones importantes con mayor confianza.
+
+<br><br>
+
+<strong>Metas a largo plazo</strong><br>
+A largo plazo me veo trabajando profesionalmente en proyectos importantes relacionados con Ingeniería Civil, teniendo mi propia constructora y ser la cabeza de varias planeaciones, teniendo estabilidad personal y económica, y construyendo una vida en la que me sienta satisfecha con lo que he logrado. Me gustaría contruir mi propia casa y hacer un espacio que se sienta seguro y parte de mi.
+
+</p>
+            </div>
+
+        </section>
+
+        <section id="decisiones">
+
+            <div class="card">
+
+
+                <h2>TOMA DE DECISIIONES</h2>
+                <section id="decisiones">
+
+    <div class="card">
+
+        <!-- VIDEO -->
+
+        <iframe
+            class="video-frame"
+            width="100%"
+            height="250"
+            src="https://www.youtube.com/embed/u87DVFUajr8"
+            title="Toma de decisiones"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+
+        <br><br>
+
+    </div>
+
+</section>
+
+                <p>
+                 <strong>Aprendizaje</strong><br>
+Este video me ayudó a comprender que tomar decisiones es una parte importante de la vida y que evitar decidir también es una decisión. Aprendí que no siempre existirán opciones perfectas, pero analizar las ventajas y desventajas puede ayudar a tomar decisiones de manera más consciente. Además, entendí que mientras más practiquemos tomar decisiones, más confianza podremos desarrollar en nosotros mismos.
+
+<br><br>
+
+<strong>Aplicación personal</strong><br>
+Puedo aplicar este aprendizaje en mi vida al momento de tomar decisiones relacionadas con mi futuro académico y personal. Por ejemplo, me ayuda a reflexionar con más calma sobre la carrera que quiero estudiar y las metas que deseo cumplir. También considero importante aprender a confiar más en mis decisiones y entender que equivocarse algunas veces también forma parte del crecimiento personal.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section id="collage">
+
+            <div class="card">
+
+
+                <h2>COLLAGE</h2>
+
+                     <img src="Green Brown Natural Photo Collage Family Canvas.png" class="collage-img">
+                 </div>
+
+            </div>
+
+        </section>
+
+       <section id="conclusion">
+
+    <div class="card">
+
+        <h2>Conclusión</h2>
+
+       <iframe
+    width="100%"
+    height="250"
+    src="https://www.youtube.com/embed/H6kz7oj45XM?si=1"
+    title="YouTube video player"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+</iframe>
+
+    </div>
+
+</section>
+
+        </video>
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+    </div>
+
+</div>
+
+<!-- FINAL -->
+
+<div class="ground">
+
+    <div class="path"></div>
+
+</div>
+
+</body>
+</html>
